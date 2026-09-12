@@ -1,0 +1,17 @@
+{
+  "bsonType": "object",
+  "required": ["name", "latitude", "longitude"],
+  "properties": {
+    "_id": { "bsonType": "string" },
+    "name": { "bsonType": "string" },
+    "cover": { "bsonType": "string", "defaultValue": "" },
+    "description": { "bsonType": "string", "maxLength": 200, "defaultValue": "" },
+    "latitude": { "bsonType": "double" },
+    "longitude": { "bsonType": "double" },
+    "open_hours": { "bsonType": "string", "defaultValue": "" },
+    "ticket_price": { "bsonType": "double" },
+    "checkin_count": { "bsonType": "int", "defaultValue": 0 },
+    "tags": { "bsonType": "array", "items": { "bsonType": "string" } },
+    "updated_at": { "bsonType": "timestamp" }
+  }
+}

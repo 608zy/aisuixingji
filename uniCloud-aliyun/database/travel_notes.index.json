@@ -1,0 +1,60 @@
+{
+  "indexes": [
+    {
+      "IndexName": "user_id",
+      "MgoKeySchema": {
+        "MgoIndexKeys": [
+          {
+            "Name": "user_id",
+            "Direction": "1"
+          }
+        ],
+        "MgoIsUnique": false
+      }
+    },
+    {
+      "IndexName": "created_at_desc",
+      "MgoKeySchema": {
+        "MgoIndexKeys": [
+          {
+            "Name": "created_at",
+            "Direction": "-1"
+          }
+        ],
+        "MgoIsUnique": false
+      }
+    },
+    {
+      "IndexName": "user_created",
+      "MgoKeySchema": {
+        "MgoIndexKeys": [
+          {
+            "Name": "user_id",
+            "Direction": "1"
+          },
+          {
+            "Name": "created_at",
+            "Direction": "-1"
+          }
+        ],
+        "MgoIsUnique": false
+      }
+    },
+    {
+      "IndexName": "user_local",
+      "MgoKeySchema": {
+        "MgoIndexKeys": [
+          {
+            "Name": "user_id",
+            "Direction": "1"
+          },
+          {
+            "Name": "local_id",
+            "Direction": "1"
+          }
+        ],
+        "MgoIsUnique": false
+      }
+    }
+  ]
+}

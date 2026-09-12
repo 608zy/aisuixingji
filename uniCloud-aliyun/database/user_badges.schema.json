@@ -1,0 +1,10 @@
+{
+  "bsonType": "object",
+  "required": ["user_id", "badge_id", "unlocked_at"],
+  "properties": {
+    "_id": { "bsonType": "string" },
+    "user_id": { "bsonType": "string" },
+    "badge_id": { "bsonType": "string" },
+    "unlocked_at": { "bsonType": "timestamp" }
+  }
+}

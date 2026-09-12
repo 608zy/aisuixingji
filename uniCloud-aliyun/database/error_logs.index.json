@@ -1,0 +1,28 @@
+{
+  "indexes": [
+    {
+      "IndexName": "created_at_desc",
+      "MgoKeySchema": {
+        "MgoIndexKeys": [
+          {
+            "Name": "created_at",
+            "Direction": "-1"
+          }
+        ],
+        "MgoIsUnique": false
+      }
+    },
+    {
+      "IndexName": "error_type",
+      "MgoKeySchema": {
+        "MgoIndexKeys": [
+          {
+            "Name": "error_type",
+            "Direction": "1"
+          }
+        ],
+        "MgoIsUnique": false
+      }
+    }
+  ]
+}

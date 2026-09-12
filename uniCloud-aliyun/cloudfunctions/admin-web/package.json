@@ -1,0 +1,9 @@
+{
+  "name": "admin-web",
+  "version": "1.0.0",
+  "description": "管理员 WEB 专用：用户列表、用量、封号、匿名化（口令见环境变量 ADMIN_WEB_TOKEN）",
+  "main": "index.js",
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

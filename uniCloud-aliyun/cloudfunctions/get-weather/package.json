@@ -1,0 +1,16 @@
+{
+  "name": "get-weather",
+  "version": "1.0.0",
+  "description": "获取天气信息云函数（使用和风天气API）",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "weather",
+    "qweather",
+    "hefeng"
+  ],
+  "author": "",
+  "license": "MIT"
+}

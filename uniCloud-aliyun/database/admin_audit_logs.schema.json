@@ -1,0 +1,17 @@
+{
+  "bsonType": "object",
+  "required": ["action", "created_at"],
+  "permission": {
+    "read": false,
+    "create": false,
+    "update": false,
+    "delete": false
+  },
+  "properties": {
+    "_id": { "bsonType": "string" },
+    "action": { "bsonType": "string", "description": "如 ban_user / anonymize_user / list_users" },
+    "target_uid": { "bsonType": "string", "description": "被操作用户 _id" },
+    "detail": { "bsonType": "string", "description": "JSON 或说明文本" },
+    "created_at": { "bsonType": "timestamp" }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "bsonType": "object",
+  "required": ["user_id", "content", "created_at"],
+  "properties": {
+    "_id": { "bsonType": "string" },
+    "user_id": { "bsonType": "string" },
+    "note_id": { "bsonType": "string" },
+    "title": { "bsonType": "string", "defaultValue": "" },
+    "content": { "bsonType": "string" },
+    "images": { "bsonType": "array", "items": { "bsonType": "string" } },
+    "cover": { "bsonType": "string", "defaultValue": "" },
+    "address": { "bsonType": "string", "defaultValue": "" },
+    "location": {
+      "bsonType": "object",
+      "properties": {
+        "latitude": { "bsonType": "double" },
+        "longitude": { "bsonType": "double" }
+      }
+    },
+    "like_count": { "bsonType": "int", "defaultValue": 0 },
+    "comment_count": { "bsonType": "int", "defaultValue": 0 },
+    "is_hidden": { "bsonType": "bool", "defaultValue": false },
+    "created_at": { "bsonType": "timestamp" },
+    "updated_at": { "bsonType": "timestamp" },
+    "is_anonymized": { "bsonType": "bool", "defaultValue": false },
+    "anonymized_at": { "bsonType": "timestamp" }
+  }
+}

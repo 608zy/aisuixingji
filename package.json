@@ -1,0 +1,12 @@
+{
+  "name": "ai-travel-note-miniapp",
+  "private": true,
+  "devDependencies": {
+    "@vue/compiler-sfc": "3.4.21",
+    "esbuild": "0.20.2"
+  },
+  "scripts": {
+    "test": "node --test tests/core-utils.test.mjs && node tests/validate-vue.mjs",
+    "build:admin": "npm --prefix 管理员WEB run build"
+  }
+}

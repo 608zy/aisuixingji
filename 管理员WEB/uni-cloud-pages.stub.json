@@ -1,0 +1,9 @@
+{
+  "pages": [],
+  "globalStyle": {},
+  "uniCloud": {
+    "provider": "aliyun",
+    "spaceId": "",
+    "clientSecret": ""
+  }
+}

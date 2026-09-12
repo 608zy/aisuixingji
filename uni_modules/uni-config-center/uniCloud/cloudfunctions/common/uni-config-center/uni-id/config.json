@@ -1,0 +1,15 @@
+{
+  "dcloudAppid": "__UNI__9A3AFCF",
+  "tokenSecret": "ai-travel-note-token-secret-20260317",
+  "tokenExpiresIn": 7200,
+  "tokenExpiresThreshold": 1200,
+  "mp-weixin": {
+    "oauth": {
+      "weixin": {
+        "appid": "wx15622b030f2de0c0",
+        "appsecret": "e2186b4d385f898c57093ded80b77f27"
+      }
+    }
+  }
+}
+

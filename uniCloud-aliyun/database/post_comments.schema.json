@@ -1,0 +1,15 @@
+{
+  "bsonType": "object",
+  "required": ["post_id", "user_id", "content", "created_at"],
+  "properties": {
+    "_id": { "bsonType": "string" },
+    "post_id": { "bsonType": "string" },
+    "user_id": { "bsonType": "string" },
+    "content": { "bsonType": "string", "maxLength": 200 },
+    "parent_id": { "bsonType": "string" },
+    "is_deleted": { "bsonType": "bool", "defaultValue": false },
+    "created_at": { "bsonType": "timestamp" },
+    "is_anonymized": { "bsonType": "bool", "defaultValue": false },
+    "anonymized_at": { "bsonType": "timestamp" }
+  }
+}

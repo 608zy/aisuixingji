@@ -1,0 +1,15 @@
+{
+  "name": "admin-web-ui",
+  "private": true,
+  "version": "1.0.0",
+  "description": "管理员WEB — 连接 uniCloud 云函数 admin-web",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0",
+    "@dcloudio/uni-cloud": "3.0.0-alpha-5000720260327001"
+  }
+}

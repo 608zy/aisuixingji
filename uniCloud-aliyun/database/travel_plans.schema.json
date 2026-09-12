@@ -1,0 +1,36 @@
+{
+  "bsonType": "object",
+  "required": ["user_id", "title", "created_at"],
+  "properties": {
+    "_id": { "bsonType": "string" },
+    "user_id": { "bsonType": "string" },
+    "title": { "bsonType": "string" },
+    "destination": { "bsonType": "string", "defaultValue": "" },
+    "days": { "bsonType": "int", "minimum": 1, "maximum": 14 },
+    "daily_spots": {
+      "bsonType": "array",
+      "items": {
+        "bsonType": "object",
+        "properties": {
+          "day": { "bsonType": "int" },
+          "spots": {
+            "bsonType": "array",
+            "items": {
+              "bsonType": "object",
+              "properties": {
+                "name": { "bsonType": "string" },
+                "duration_hours": { "bsonType": "double" },
+                "description": { "bsonType": "string" },
+                "latitude": { "bsonType": "double" },
+                "longitude": { "bsonType": "double" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "budget": { "bsonType": "object" },
+    "created_at": { "bsonType": "timestamp" },
+    "updated_at": { "bsonType": "timestamp" }
+  }
+}

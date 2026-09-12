@@ -1,0 +1,10 @@
+{
+  "bsonType": "object",
+  "required": ["post_id", "user_id", "created_at"],
+  "properties": {
+    "_id": { "bsonType": "string" },
+    "post_id": { "bsonType": "string" },
+    "user_id": { "bsonType": "string" },
+    "created_at": { "bsonType": "timestamp" }
+  }
+}

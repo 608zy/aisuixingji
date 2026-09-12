@@ -1,0 +1,125 @@
+{
+  "bsonType": "object",
+  "required": ["user_id", "content", "location", "created_at"],
+  "permission": {
+    "read": "doc.user_id == auth.uid",
+    "create": "auth.uid != null",
+    "update": "doc.user_id == auth.uid",
+    "delete": "doc.user_id == auth.uid"
+  },
+  "properties": {
+    "_id": {
+      "description": "游记 ID"
+    },
+    "user_id": {
+      "bsonType": "string",
+      "description": "用户 ID",
+      "foreignKey": "uni-id-users._id"
+    },
+    "title": {
+      "bsonType": "string",
+      "description": "游记标题",
+      "title": "标题",
+      "trim": "both"
+    },
+    "local_id": {
+      "bsonType": "string",
+      "description": "本地游记 ID（用于去重/增量同步）",
+      "title": "本地ID"
+    },
+    "content": {
+      "bsonType": "string",
+      "description": "游记内容",
+      "title": "内容",
+      "trim": "both"
+    },
+    "images": {
+      "bsonType": "array",
+      "description": "图片 URL 数组",
+      "title": "图片",
+      "items": {
+        "bsonType": "string"
+      }
+    },
+    "location": {
+      "bsonType": "object",
+      "description": "位置信息",
+      "title": "位置",
+      "properties": {
+        "address": {
+          "bsonType": "string",
+          "description": "详细地址"
+        },
+        "addressText": {
+          "bsonType": "string",
+          "description": "地址文本"
+        },
+        "latitude": {
+          "bsonType": "number",
+          "description": "纬度"
+        },
+        "longitude": {
+          "bsonType": "number",
+          "description": "经度"
+        }
+      }
+    },
+    "template": {
+      "bsonType": "string",
+      "description": "使用的模板 ID",
+      "title": "模板",
+      "enum": ["literary", "humorous", "concise", "poetic"],
+      "defaultValue": "literary"
+    },
+    "created_at": {
+      "bsonType": "timestamp",
+      "description": "创建时间",
+      "title": "创建时间",
+      "forceDefaultValue": {
+        "$env": "now"
+      }
+    },
+    "updated_at": {
+      "bsonType": "timestamp",
+      "description": "更新时间",
+      "title": "更新时间",
+      "forceDefaultValue": {
+        "$env": "now"
+      }
+    },
+    "is_edited": {
+      "bsonType": "bool",
+      "description": "是否已编辑",
+      "title": "已编辑",
+      "defaultValue": false
+    },
+    "edit_history": {
+      "bsonType": "array",
+      "description": "编辑历史记录",
+      "title": "编辑历史",
+      "items": {
+        "bsonType": "object",
+        "properties": {
+          "timestamp": {
+            "bsonType": "timestamp",
+            "description": "编辑时间"
+          },
+          "content": {
+            "bsonType": "string",
+            "description": "编辑后的内容"
+          }
+        }
+      }
+    },
+    "tags": {
+      "bsonType": "array",
+      "description": "自定义标签",
+      "title": "标签",
+      "items": {
+        "bsonType": "string"
+      }
+    },
+    "is_anonymized": { "bsonType": "bool", "defaultValue": false },
+    "anonymized_at": { "bsonType": "timestamp" }
+  }
+}

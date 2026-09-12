@@ -1,0 +1,22 @@
+{
+  "bsonType": "object",
+  "required": ["snapshot_date", "rankings", "created_at"],
+  "properties": {
+    "_id": { "bsonType": "string" },
+    "snapshot_date": { "bsonType": "string" },
+    "rankings": {
+      "bsonType": "array",
+      "items": {
+        "bsonType": "object",
+        "properties": {
+          "rank": { "bsonType": "int" },
+          "spot_id": { "bsonType": "string" },
+          "spot_name": { "bsonType": "string" },
+          "checkin_count": { "bsonType": "int" },
+          "prev_rank": { "bsonType": "int" }
+        }
+      }
+    },
+    "created_at": { "bsonType": "timestamp" }
+  }
+}

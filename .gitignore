@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+
+# Build output
+unpackage/
+
+# IDE
+.hbuilderx/
+.idea/
+.vscode/
+.kiro/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+管理员WEB/ADMIN_WEB_TOKEN.local.txt
+uniCloud-aliyun/cloudfunctions/admin-web/admin-token.json
+
+
+# Local credentials and generated files
+.env
+.env.*
+!.env.example
+project.private.config.json
+uniCloud-aliyun/spaces.json
+管理员WEB/ADMIN_WEB_TOKEN.local.txt
+uniCloud-aliyun/cloudfunctions/admin-web/admin-token.json
+.lingma/
+.kiro/
+.hbuilderx/
+.idea/
+.vscode/
+node_modules/
+dist/
+unpackage/
+target/
+*.log

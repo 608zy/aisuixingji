@@ -1,0 +1,11 @@
+{
+  "name": "incremental-sync",
+  "version": "1.0.0",
+  "description": "增量同步云函数",
+  "dependencies": {
+    "uni-id-common": "file:../../../uni_modules/uni-id-common/uniCloud/cloudfunctions/common/uni-id-common"
+  },
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}
